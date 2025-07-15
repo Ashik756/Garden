@@ -12,21 +12,22 @@
     <!-- Font Awesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
-  <body>
-    <header>
-      <nav class="flex justify-between">
-        <div>         
-          <h1>garden</h1> 
-        </div>
-        <div>
-          <a href="#">Home</a>
-          <a href="#">All Plants</a>
-          <a href="#">Contact</a>
-        </div>
-        <div>
-          <i class="fa-solid fa-bars"></i>
-        </div>
-      </nav>
+  <body class="bg-[#141c0f] text-white">
+    <header class="bg-[url(./assets/bg-plant.png)] h-svh bg-center bg-no-repeat bg-cover">
+        <nav class="flex justify-between max-w-[90%] mx-auto py-8">
+          <div>         
+            <h1>garden</h1> 
+          </div>
+          <div class="absolute top-20 left-[83%] flex flex-col gap-5 text-xl text-right overflow-hidden transition-all duration-300" id="nav-links">
+            <a href="#">Home</a>
+            <a href="#">All Plants</a>
+            <a href="#">Contact</a>
+          </div>
+          <div class="text-xl">
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+          </div>
+        </nav>
     </header>
+    <script src="./script.js"></script>
   </body>
 </html>
